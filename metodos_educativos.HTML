@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos Educativos - Sinfonía Creativa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para esta página */
+        body {
+            background-image: url("C:\HTML CSS JAVA\Imagenes\fondom.png");
+            background-size: cover;
+            color: #333; /* Cambiar el color del texto para que sea legible */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        section {
+            flex: 1 1 300px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para resaltar el texto */
+            padding: 20px;
+            border-radius: 10px;
+            background-image: linear-gradient(to bottom right, #ffffff, #f0f0f0); /* Degradado para el fondo */
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #666;
+        }
+
+        .carousel-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel img {
+            width: 100%; /* Ajustar al tamaño deseado */
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos adicionales para los botones del carrusel */
+        .carousel-btn {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .carousel-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sinfonía Creativa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bienvenida.html">Bienvenida</a></li>
+                <li><a href="violin.html">Violín</a></li>
+                <li><a href="cello.html">Cello</a></li>
+                <li><a href="piano.html">Piano</a></li>
+                <li><a href="metodos_educativos.html">Métodos Educativos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Método Suzuki</h2>
+            <p>Todos los niños pueden aprender. Hace más de cincuenta años, el violinista japonés Shinichi Suzuki se dio cuenta de las implicaciones del hecho de que los niños de todo el mundo aprendan a hablar su idioma nativo con facilidad. Comenzó a aplicar los principios básicos de la adquisición del lenguaje al aprendizaje de la música y llamó a su método el enfoque de la lengua materna. Las ideas de responsabilidad de los padres, estímulo amoroso, repetición constante, etc., son algunas de las características especiales del enfoque Suzuki.</p>
+            <p>Los padres participan activamente en el aprendizaje musical de sus hijos, asistiendo a clases y actuando como "profesores en casa". Además, el método Suzuki promueve el inicio temprano en la educación musical y enfatiza la importancia de escuchar música regularmente.</p>
+            <p>Para más detalles, visita <a href="https://www.suzukiassociation.org/">Suzuki Association of the Americas</a>.</p>
+        </section>
+        <section>
+            <h2>Método Alfred Piano</h2>
+            <p>El método Alfred Piano ofrece una variedad de cursos diseñados para estudiantes de diferentes edades y niveles de habilidad:</p>
+            <ul>
+                <li>Curso de preparación básica</li>
+                <li>Curso básico</li>
+                <li>Curso todo en uno</li>
+                <li>Curso de niveles completos</li>
+            </ul>
+            <p>Cada curso está diseñado para proporcionar una base sólida en el piano y está adaptado a las necesidades específicas de los estudiantes en diferentes etapas de su aprendizaje.</p>
+            <p>Para más información, visita <a href="https://www.alfred.com/">Alfred Music</a>.</p>
+        </section>
+        <section>
+            <h2>Método Orff</h2>
+            <p>El método Orff es un enfoque educativo para la enseñanza de la música que se basa en el juego y la improvisación. Fue desarrollado por el compositor alemán Carl Orff y su colega Gunild Keetman en la década de 1920. Este método se centra en el desarrollo integral del niño a través de la música, utilizando instrumentos de percusión, canto, movimiento y actividades rítmicas.</p>
+            <p>Los principios clave del método Orff incluyen el uso de materiales musicales accesibles y atractivos, la participación activa del estudiante en el proceso de aprendizaje, y la integración de la música con otras áreas del desarrollo infantil, como el lenguaje, la creatividad y la expresión corporal.</p>
+            <p>Para más detalles, visita <a href="https://www.orff.org/">Orff-Schulwerk</a>.</p>
+        </section>
+        <section>
+            <h2>Método Kodály</h2>
+            <p>El método Kodály es un enfoque educativo para la enseñanza de la música que se basa en el canto, la audiación y el movimiento. Fue desarrollado por el compositor húngaro Zoltán Kodály en la primera mitad del siglo XX. Este método se centra en el desarrollo auditivo y vocal del niño, utilizando canciones folclóricas y juegos musicales para enseñar conceptos musicales fundamentales.</p>
+            <p>Los principios clave del método Kodály incluyen el uso de canciones folclóricas auténticas y de alta calidad, la secuenciación cuidadosa de los conceptos musicales, y la integración de la música en el currículo escolar de manera holística.</p>
+            <p>Para más detalles, visita <a href="https://kodaly.org/">Kodály Society of North America</a>.</p>
+        </section>
+    </main>
+    <section class="carousel-container">
+        <h2>Imágenes de Apoyo</h2>
+        <div class="carousel">
+            <img src="C:\HTML CSS JAVA\Imagenes\piano1.png" alt="Imagen 1">
+            <img src="C:\HTML CSS JAVA\Imagenes\piano2.png" alt="Imagen 2">
+            <img src="C:\HTML CSS JAVA\Imagenes\piano3.png" alt="Imagen 3">
+            <img src="C:\HTML CSS JAVA\Imagenes\violin1.png" alt="Imagen 4">
+            <img src="C:\HTML CSS JAVA\Imagenes\violin2.png" alt="Imagen 5">
+        </div>
+        <button class="carousel-btn" id="prevBtn">&#10094;</button>
+        <button class="carousel-btn" id="nextBtn">&#10095;</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sinfonía Creativa</p>
+        <button><a href="index.html">Volver al inicio</a></button>
+    </footer>
+
+    <!-- Script para el carrusel de imágenes -->
+    <script>
+        let carouselIndex = 0;
+        const carousel = document.querySelector('.carousel');
+        const slides = carousel.children;
+
+        function showSlides() {
+            carousel.style.transform = `translateX(-${carouselIndex * (100 / slides.length)}%)`;
+        }
+
+        function nextSlide() {
+            if (carouselIndex < slides.length - 1) {
+                carouselIndex++;
+                showSlides();
+            } else {
+                carouselIndex = 0;
+                showSlides();
+            }
+        }
+
+        function prevSlide() {
+            if (carouselIndex > 0) {
+                carouselIndex--;
+                showSlides();
+            } else {
+                carouselIndex = slides.length - 1;
+                showSlides();
+            }
+        }
+
+        document.getElementById('nextBtn').addEventListener('click', nextSlide);
+        document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+        // Autoplay del carrusel de imágenes
+        setInterval(nextSlide, 5000);
+    </script>
+<button id="dark-mode-toggle">Modo Oscuro</button>
+</body>
+</html>

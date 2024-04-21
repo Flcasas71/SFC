@@ -1,0 +1,125 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Agregamos la transición */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Cambiamos el color al pasar el cursor */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer button {
+    background-color: #4CAF50; /* Color verde */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agregamos la transición */
+}
+
+footer button:hover {
+    background-color: #2E8B57; /* Cambiamos el color de fondo al pasar el cursor */
+}
+
+footer button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos específicos para la página de bienvenida */
+.welcome-image {
+    display: block;
+    margin: 0 auto; /* Esto centrará la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos específicos para el carrusel */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 300px; /* Altura máxima del carrusel */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Ajustar el ancho total para las imágenes */
+}
+
+.carousel img {
+    flex: 0 0 33.333%; /* Establecer el ancho máximo para cada imagen */
+    height: auto;
+    object-fit: contain; /* Usar 'contain' para que la imagen se ajuste dentro del contenedor */
+}
+
+.carousel-btn {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right

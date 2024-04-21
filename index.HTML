@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinfonía Creativa - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para la página del índex */
+        .index-image {
+            display: block;
+            margin: 0 auto; /* Esto centrará la imagen horizontalmente */
+            max-width: 50%; /* Cambia el tamaño máximo de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border: 5px solid #333; /* Añade un borde */
+            border-radius: 10px; /* Añade esquinas redondeadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra */
+        }
+
+        /* Estilos para el mensaje de bienvenida */
+        .welcome-message {
+            text-align: center; /* Centra el texto horizontalmente */
+            margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sinfonía Creativa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bienvenida.html">Bienvenida</a></li>
+                <li><a href="violin.html">Violín</a></li>
+                <li><a href="cello.html">Cello</a></li>
+                <li><a href="piano.html">Piano</a></li>
+                <li><a href="metodos_educativos.html">Métodos Educativos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome-message">
+            <h2>Bienvenido a Sinfonía Creativa</h2>
+            <p>Aquí encontrarás información sobre nuestra escuela de música.</p>
+        </div>
+        <img src="C:\HTML CSS JAVA\Imagenes\B1.jpg" alt="Imagen de violín" class="index-image">
+        <button id="modo-btn">Cambiar modo</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sinfonía Creativa |  contacto: 9331018624 | una empresa mas de Fredy lopez Casas</p>
+        <button><a href="index.html">Volver al inicio</a></button>
+    </footer>
+
+    <script>
+        const modoBtn = document.getElementById('modo-btn');
+        modoBtn.addEventListener('click', () => {
+            document.body.classList.toggle('modo-oscuro');
+        });
+    </script>
+</body>
+</html>
